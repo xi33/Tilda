@@ -83,14 +83,30 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\css\demo.css" />
+    <Content Include="Assets\css\fallback.css" />
+    <Content Include="Assets\css\fonts\icons.svg" />
+    <Content Include="Assets\css\normalize.css" />
+    <Content Include="Assets\css\style1.css" />
+    <Content Include="Assets\css\style5.css" />
+    <Content Include="Assets\css\style_common.css" />
+    <Content Include="Assets\images\1.jpg" />
+    <Content Include="Assets\images\2.jpg" />
+    <Content Include="Assets\images\3.jpg" />
+    <Content Include="Assets\images\4.jpg" />
+    <Content Include="Assets\images\5.jpg" />
+    <Content Include="Assets\images\6.jpg" />
+    <Content Include="Assets\images\7.jpg" />
+    <Content Include="Assets\images\AttributionsImages.txt" />
+    <Content Include="Assets\images\bg.jpg" />
+    <Content Include="Assets\js\jquery.hoverfold.js" />
+    <Content Include="Assets\js\modernizr.custom.69142.js" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Assets\css\" />
-    <Folder Include="Assets\images\" />
-    <Folder Include="Assets\js\" />
+    <Content Include="Views\Home\Search.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.Debug.config">
@@ -104,6 +120,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\_ViewStart.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\css\fonts\icons.eot" />
+    <Content Include="Assets\css\fonts\icons.ttf" />
+    <Content Include="Assets\css\fonts\icons.woff" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
