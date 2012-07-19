@@ -4,6 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using Autofac;
+using Autofac.Integration.Mvc;
+using System.Reflection;
 
 namespace Web
 {
@@ -12,6 +15,17 @@ namespace Web
 
     public class MvcApplication : System.Web.HttpApplication
     {
+        
+        public static IContainer BuildContainer()
+        {
+            var builder = new ContainerBuilder();
+            builder.RegisterControllers(typeof(MvcApplication).Assembly);
+            //compared to 
+            //builder.RegisterControllers(Assembly.GetExecutingAssembly());
+
+            return builder.Build();
+        }
+
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
@@ -26,6 +40,9 @@ namespace Web
 
         protected void Application_Start()
         {
+            var container = BuildContainer();
+            DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
+
             AreaRegistration.RegisterAllAreas();
 
             RegisterRoutes(RouteTable.Routes);
