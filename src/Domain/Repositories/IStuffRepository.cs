@@ -6,7 +6,8 @@ using Model;
 
 namespace Domain.Repositories
 {
-    public class IStuffRepository : IRepository<Stuff>
+    public interface IStuffRepository
     {
+        IEnumerable<Stuff> Get();
     }
 }
