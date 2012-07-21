@@ -9,12 +9,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "src\Model\Model.cs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "src\Web\Web.csproj", "{967694EC-1071-4E8D-983B-8BFF9A9EE4D4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "src\Test\Test.csproj", "{20889B8C-B17A-43F5-B3F5-E02BFD60440B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20889B8C-B17A-43F5-B3F5-E02BFD60440B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20889B8C-B17A-43F5-B3F5-E02BFD60440B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20889B8C-B17A-43F5-B3F5-E02BFD60440B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20889B8C-B17A-43F5-B3F5-E02BFD60440B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{25A17760-2DA9-4359-98A9-E0432D44C64D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{25A17760-2DA9-4359-98A9-E0432D44C64D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25A17760-2DA9-4359-98A9-E0432D44C64D}.Release|Any CPU.ActiveCfg = Release|Any CPU
